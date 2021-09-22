@@ -62,7 +62,7 @@ while True:
 ```
 ### Evidence
 
-<img src="https://github.com/tslingl25/Circuit-python/blob/main/Images/
+<img src="https://github.com/tslingl25/Circuit-python/blob/main/Images/CapServo.gif?raw=true" alt="ServoDemo" width="500">
 
 ### Wiring
 Can be seen in the gif above.
