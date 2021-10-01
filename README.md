@@ -11,25 +11,82 @@ This repository will actually serve as a aid to help you get started with your o
 ## Hello_CircuitPython
 
 ### Description & Code
-Description goes here
+This assignment includes makeing the light on the aruidno change colors.
 
-Here's how you make code look like code:
 
-```python
-Code goes here
+```
+
+import time
+import board
+import neopixel
+
+pixel_pin = board.NEOPIXEL
+num_pixels = 10
+
+ORDER = neopixel.GRB
+
+pixels = neopixel.NeoPixel(
+    pixel_pin, num_pixels, brightness=0.2, auto_write=False, pixel_order=ORDER
+)
+
+
+def wheel(pos):
+  
+    if pos < 0 or pos > 255:
+        r = g = b = 0
+    elif pos < 85:
+        r = int(pos * 3)
+        g = int(255 - pos * 3)
+        b = 0
+    elif pos < 170:
+        pos -= 85
+        r = int(255 - pos * 3)
+        g = 0
+        b = int(pos * 3)
+    else:
+        pos -= 170
+        r = 0
+        g = int(pos * 3)
+        b = int(255 - pos * 3)
+    return (r, g, b) if ORDER in (neopixel.RGB, neopixel.GRB) else (r, g, b, 0)
+
+
+def rainbow_cycle(wait):
+    for j in range(255):
+        for i in range(num_pixels):
+            pixel_index = (i * 256 // num_pixels) + j
+            pixels[i] = wheel(pixel_index & 255)
+        pixels.show()
+        time.sleep(wait)
+
+
+while True:
+    pixels.fill((255, 0, 0))
+  
+    pixels.show()
+    time.sleep(1)
+    pixels.fill((0, 255, 0))
+    pixels.show()
+    time.sleep(1)
+
+    pixels.fill((0, 0, 255))
+    pixels.show()
+    time.sleep(1)
+
+    rainbow_cycle(0.001) 
 
 ```
 
 
 ### Evidence
-Pictures / Gifs of your work should go here.  You need to communicate what your thing does.
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/71349802/135673024-dfb9ae0d-bc9a-481a-8b49-1a96f6482051.gif)
+
 
 ### Wiring
-Make an account with your google ID at [tinkercad.com](https://www.tinkercad.com/learn/circuits), and use "TinkerCad Circuits to make a wiring diagram."  It's really easy!  
-Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
+none for this
 
 ### Reflection
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
+It wasnt that hard of an assignment, makeing the gif was new though.
 
 
 
