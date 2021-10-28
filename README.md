@@ -128,25 +128,6 @@ It worked, it did this by senseing our bodys interupt the magnetic field put off
 
 
 
-## CircuitPython_LCD
-
-### Description & Code
-
-```python
-Code goes here
-
-```
-
-### Evidence
-
-### Wiring
-
-### Reflection
-
-
-
-
-
 ## Distance sensor
 
 ### Description & Code 
