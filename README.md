@@ -122,7 +122,7 @@ while True:
 <img src="https://github.com/tslingl25/Circuit-python/blob/main/Images/CapServo.gif?raw=true" alt="ServoDemo" width="500">
 
 ### Wiring
-Can be seen in the gif above.
+![image](https://user-images.githubusercontent.com/71349802/139322416-ac54e3b4-beac-4224-8652-7d65b9c7a81d.png)
 ### Reflection
 It worked, it did this by senseing our bodys interupt the magnetic field put off by the wire. I found that the more wire you have near you hand, the easier it is for the thing to sense your body near it.
 
