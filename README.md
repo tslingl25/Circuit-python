@@ -200,6 +200,7 @@ while True:
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/71349802/135676611-5a1c0b6f-7671-4068-95bd-8632cc8343c9.gif)
 
 ### Wiring
-Wiring can be seen in the gif above
+![image](https://user-images.githubusercontent.com/71349802/139322621-b64e7b8e-bf62-4392-915f-ad4aeadb9005.png)
+
 ### Reflection
 This assignment was pretty hard, in particullar the rgb values. It is important to look at the past assignments like hello circuit python to help with this assignment.
