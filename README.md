@@ -11,7 +11,7 @@ This repository will actually serve as a aid to help you get started with your o
 ## Hello_CircuitPython
 
 ### Description & Code
-This assignment includes makeing the light on the aruidno change colors.
+This assignment includes makeing the light on the aruidno change colors. This is done useing RGB values.
 
 
 ```
@@ -86,7 +86,7 @@ while True:
 none for this
 
 ### Reflection
-It wasnt that hard of an assignment, makeing the gif was new though.
+Codeing is hard for me, It took me a while but I eventually got it. I learnd the importance of getting partners to help.
 
 
 
@@ -95,7 +95,7 @@ It wasnt that hard of an assignment, makeing the gif was new though.
 
 ### Description & Code
 
-This assignment involves makeing a servo turn when you put your hand near it.
+This assignment involves makeing a servo turn when you put your hand near it. This type of thing is used in all traffic intersections.
 CODE
 ```
 import time
@@ -124,7 +124,7 @@ while True:
 ### Wiring
 Can be seen in the gif above.
 ### Reflection
-I worked, it did this by senseing our bodys interupt the magnetic field put off by the wire.
+It worked, it did this by senseing our bodys interupt the magnetic field put off by the wire. I found that the more wire you have near you hand, the easier it is for the thing to sense your body near it.
 
 
 
@@ -149,7 +149,8 @@ Code goes here
 
 ## Distance sensor
 
-### Description & Code
+### Description & Code 
+This assignment is to make a light change colors in accordance to rgb values detected by a distance sensor.
 
 ```
 
@@ -220,4 +221,4 @@ while True:
 ### Wiring
 Wiring can be seen in the gif above
 ### Reflection
-This assignment was pretty hard, in particullar the rgb values.
+This assignment was pretty hard, in particullar the rgb values. It is important to look at the past assignments like hello circuit python to help with this assignment.
