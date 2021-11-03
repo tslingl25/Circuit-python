@@ -6,7 +6,8 @@ This repository will actually serve as a aid to help you get started with your o
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [CircuitPython_LCD](#CircuitPython_LCD)
 * [NextAssignmentGoesHere](#NextAssignment)
---- Python
+
+---
 
 ## Hello_CircuitPython
 
@@ -14,7 +15,7 @@ This repository will actually serve as a aid to help you get started with your o
 This assignment includes makeing the light on the aruidno change colors. This is done useing RGB values.
 
 
-```
+```Python
 
 import time
 import board
@@ -97,7 +98,8 @@ Codeing is hard for me, It took me a while but I eventually got it. I learnd the
 
 This assignment involves makeing a servo turn when you put your hand near it. This type of thing is used in all traffic intersections.
 CODE
-```
+
+````Python
 import time
 import board
 import pwmio
@@ -133,7 +135,7 @@ It worked, it did this by senseing our bodys interupt the magnetic field put off
 ### Description & Code 
 This assignment is to make a light change colors in accordance to rgb values detected by a distance sensor.
 
-```
+```Python
 
 import time
 import board
@@ -159,7 +161,7 @@ while True:
             r = 255
             g = 0
             b = 0
-        elif distance > 5 and distance < 20:
+        elif distance > 5 and distance < 20: # Between 5 cm and 20 cm the neopixels should switch from red to blue.
             r = simpleio.map_range(distance, 5, 20, 255, 0)
             b = simpleio.map_range(distance, 5, 20, 0, 255)
             g = 0
@@ -203,4 +205,5 @@ while True:
 ![image](https://user-images.githubusercontent.com/71349802/139322621-b64e7b8e-bf62-4392-915f-ad4aeadb9005.png)
 
 ### Reflection
-This assignment was pretty hard, in particullar the rgb values. It is important to look at the past assignments like hello circuit python to help with this assignment.
+This assignment was pretty hard, in particullar the rgb values. It is important to look at the past assignments like hello circuit python to help with this assignment. Makeing the map was the hardest part. It is important to remember the info in the link below.
+https://circuitpython.readthedocs.io/projects/simpleio/en/latest/api.html#simpleio.map_range
