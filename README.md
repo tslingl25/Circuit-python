@@ -74,14 +74,13 @@ while True:
     pixels.show()
     time.sleep(1)
 
-    rainbow_cycle(0.001) 
+    rainbow_cycle(0.001)
 
 ```
 
-
 ### Evidence
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/71349802/135673024-dfb9ae0d-bc9a-481a-8b49-1a96f6482051.gif)
 
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/71349802/135673024-dfb9ae0d-bc9a-481a-8b49-1a96f6482051.gif)
 
 ### Wiring
 none for this
@@ -99,7 +98,7 @@ Codeing is hard for me, It took me a while but I eventually got it. I learnd the
 This assignment involves makeing a servo turn when you put your hand near it. This type of thing is used in all traffic intersections.
 CODE
 
-````Python
+```Python
 import time
 import board
 import pwmio
@@ -119,6 +118,7 @@ while True:
         my_servo.angle = angle
         time.sleep(0.05)
 ```
+
 ### Evidence
 
 <img src="https://github.com/tslingl25/Circuit-python/blob/main/Images/CapServo.gif?raw=true" alt="ServoDemo" width="500">
@@ -195,7 +195,6 @@ while True:
     print(r, g, b)
     dot.fill((r, g, b))
     time.sleep(.05)
-
 ```
 
 ### Evidence
@@ -206,4 +205,4 @@ while True:
 
 ### Reflection
 This assignment was pretty hard, in particullar the rgb values. It is important to look at the past assignments like hello circuit python to help with this assignment. Makeing the map was the hardest part. It is important to remember the info in the link below.
-https://circuitpython.readthedocs.io/projects/simpleio/en/latest/api.html#simpleio.map_range
+[Map values](https://circuitpython.readthedocs.io/projects/simpleio/en/latest/api.html#simpleio.map_range)
